@@ -9,7 +9,7 @@
 
   // Database. Ganti database_id dengan hasil perintah `npx wrangler d1 create lpkrita-db`.
   "d1_databases": [
-    { "binding": "DB", "database_name": "lpkrita-db", "database_id": "GANTI-DENGAN-DATABASE-ID" }
+    { "binding": "DB", "database_name": "lpkrita-db", "database_id": "eaa34f88-4077-41f3-9ce0-350b977ab43c" }
   ],
 
   // Penyimpanan foto & PDF yang diunggah dari dashboard.

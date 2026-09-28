@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "lpk-rita-bontang",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-09-01",
+
+  // Folder /public dilayani langsung oleh Cloudflare (CSS, JS, foto, /admin, /belajar).
+  "assets": { "directory": "./public" },
+
+  // Database. Ganti database_id dengan hasil perintah `npx wrangler d1 create lpkrita-db`.
+  "d1_databases": [
+    { "binding": "DB", "database_name": "lpkrita-db", "database_id": "GANTI-DENGAN-DATABASE-ID" }
+  ],
+
+  // Penyimpanan foto & PDF yang diunggah dari dashboard.
+  "r2_buckets": [
+    { "binding": "MEDIA", "bucket_name": "lpkrita-media" }
+  ],
+
+  // Email login superadmin pertama. Password diset lewat: npx wrangler secret put ADMIN_PASSWORD
+  "vars": { "ADMIN_EMAIL": "admin@lpkrita.id" },
+
+  "observability": { "enabled": true }
+}

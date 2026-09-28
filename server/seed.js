@@ -1,0 +1,268 @@
+// Konten awal situs. Semua bagian ini bisa diubah dari /admin.
+// Sumber: lpkritabontang.wixsite.com/lpkrita + Company Profile LPK RITA.
+
+const img = (n) => `/assets/img/${n}`;
+
+export const defaultSite = {
+  brand: {
+    name: 'LPK Rita Bontang',
+    shortName: 'LPK Rita',
+    tagline: 'Lembaga Pelatihan Kerja',
+    logo: img('logo.png'),
+    phone: '0852 5058 8688',
+    whatsapp: '6285250588688',
+    phoneAlt: '0548-3046549',
+    email: 'lpkritabontang@gmail.com',
+    address: 'Jl. Zambrut 15 No. 14A, RT 51, Kel. Berbas Tengah, Kec. Bontang Selatan, Kota Bontang, Kalimantan Timur 75323',
+    mapsQuery: 'LPK Rita Bontang, Jl. Zambrut Berbas Tengah Bontang',
+    hours: 'Senin – Sabtu, 08.00 – 16.00 WITA',
+    instagram: 'https://instagram.com/lpk_rita',
+    facebook: 'https://www.facebook.com/lkp.rita.52',
+    youtube: 'https://www.youtube.com/channel/UCqm6iQoskma7ay6I95E-viA',
+  },
+  theme: {
+    accent: '#C8364A',
+    ink: '#1B1416',
+    paper: '#F7F2EC',
+    gold: '#A9834F',
+    radius: 14,
+    displayFont: 'Fraunces',
+    bodyFont: 'Plus Jakarta Sans',
+  },
+  seo: {
+    title: 'LPK Rita Bontang — Pelatihan Kerja Bersertifikat di Bontang',
+    description: 'Lembaga Pelatihan Kerja terakreditasi di Bontang sejak 2010. Kursus Make Up Artist, Tata Rias Pengantin, Kecantikan Kulit & Rambut, Menjahit, Tata Boga, Barbershop, dan lainnya. Siap uji kompetensi BNSP.',
+    ogImage: img('uji-bnsp-2024.jpg'),
+  },
+  sectionOrder: ['hero', 'marquee', 'about', 'programs', 'why', 'steps', 'gallery', 'team', 'testimonials', 'partners', 'faq', 'cta', 'contact'],
+  sections: {
+    hero: {
+      enabled: true,
+      eyebrow: 'Pelatihan kerja bersertifikat · Sejak 2010',
+      title: 'Gali potensi diri, pulang membawa *keahlian*.',
+      subtitle: 'LPK Rita Bontang melatih warga Bontang dan sekitarnya menjadi tenaga terampil — dari make up artist dan perias pengantin hingga penjahit dan teknisi — lengkap dengan uji kompetensi resmi.',
+      primaryCta: 'Daftar Pelatihan',
+      primaryHref: '#daftar',
+      secondaryCta: 'Masuk Kelas Online',
+      secondaryHref: '/belajar',
+      image: img('uji-bnsp-2024.jpg'),
+      imageAlt: 'Peserta Uji Sertifikasi Kompetensi Kerja 2024 di LPK Rita',
+      image2: img('kelas-kecantikan.jpg'),
+      image2Alt: 'Praktik kelas kecantikan di LPK Rita',
+      badgeTitle: 'Uji Kompetensi 2024',
+      badgeText: 'Peserta lulus sertifikasi BNSP',
+      stats: [
+        { value: '2010', label: 'Berdiri di Bontang' },
+        { value: '11+', label: 'Kejuruan pelatihan' },
+        { value: 'BNSP', label: 'Siap uji kompetensi' },
+      ],
+    },
+    marquee: {
+      enabled: true,
+      items: ['Make Up Artist', 'Tata Rias Pengantin', 'Tata Kecantikan Kulit', 'Tata Kecantikan Rambut', 'Menjahit', 'Pembuatan Tas', 'Membatik', 'Tata Boga', 'Souvenir & Hantaran', 'Barbershop', 'Teknisi Handphone', 'Administrasi Perkantoran'],
+    },
+    about: {
+      enabled: true,
+      kicker: 'Tentang kami',
+      title: 'Lima belas tahun menyiapkan tangan-tangan terampil Bontang.',
+      body: 'Didirikan pada 20 November 2010 oleh Ibu Rita Hidayat, SE, LPK Rita hadir sebagai alternatif bagi masyarakat yang ingin meningkatkan keterampilan — termasuk mereka yang belum sempat mengenyam pendidikan formal.\n\nKami telah lama bekerja sama dengan perusahaan dan salon kecantikan di Bontang maupun di luar kota, sehingga peserta belajar dengan standar yang dipakai langsung di dunia kerja.',
+      quote: 'Kami melatih dengan ketulusan hati yang didasari kompetensi, agar lahir lulusan yang benar-benar siap bekerja dan mandiri.',
+      quoteAuthor: 'Rita Hidayat, SE — Pendiri & Pimpinan',
+      image: img('kelas-praktik.jpg'),
+      imageAlt: 'Instruktur LPK Rita memberi arahan di kelas',
+      vision: 'Menciptakan SDM yang berkompeten dan berwawasan intelektual, dengan dedikasi tinggi dan berbudi luhur.',
+      missions: [
+        'Membekali peserta didik dengan disiplin, mental yang berakhlak mulia, dan etos kerja profesional.',
+        'Membekali keahlian yang berorientasi pada penciptaan lapangan kerja mandiri.',
+        'Meningkatkan dan memajukan pendidikan serta keterampilan di Kalimantan Timur.',
+      ],
+      facts: [
+        { label: 'Izin Disnaker', value: '563/356/Dissosnaker.02' },
+        { label: 'Status', value: 'Terakreditasi' },
+        { label: 'Pimpinan', value: 'Rita Hidayat, SE' },
+      ],
+    },
+    programs: {
+      enabled: true,
+      kicker: 'Program pelatihan',
+      title: 'Pilih keahlian, kami siapkan jalurnya.',
+      subtitle: 'Setiap program menggabungkan teori ringkas, praktik langsung dengan model atau bahan nyata, dan pendampingan menuju uji kompetensi.',
+      items: [
+        { title: 'Make Up Artist', category: 'Kecantikan', desc: 'Rias wajah harian, pesta, hingga foto. Teknik base, contour, dan eye make up sesuai jenis kulit.', duration: '± 1 bulan', level: 'Pemula', image: img('peserta-kecantikan.jpg'), featured: true },
+        { title: 'Tata Rias Pengantin', category: 'Kecantikan', desc: 'Rias pengantin modern & adat, sanggul, paes, hingga pemasangan busana dan aksesori.', duration: '± 2 bulan', level: 'Menengah', image: img('ujikom-2.jpg'), featured: true },
+        { title: 'Tata Kecantikan Kulit', category: 'Kecantikan', desc: 'Facial, perawatan wajah & tubuh, spa, dan analisa kulit sesuai standar salon profesional.', duration: '± 1 bulan', level: 'Pemula', image: img('kelas-kecantikan.jpg'), featured: false },
+        { title: 'Tata Kecantikan Rambut', category: 'Kecantikan', desc: 'Potong, cuci, creambath, pewarnaan, dan penataan rambut untuk kebutuhan salon.', duration: '± 1 bulan', level: 'Pemula', image: img('peserta-kelas.jpg'), featured: false },
+        { title: 'Menjahit & Pembuatan Tas', category: 'Busana', desc: 'Dari pola dasar, memotong kain, hingga menyelesaikan busana dan tas siap jual.', duration: '± 2 bulan', level: 'Pemula', image: img('workshop-menjahit.jpg'), featured: false },
+        { title: 'Souvenir & Hantaran', category: 'Kriya', desc: 'Hias seserahan, parcel, dan souvenir pernikahan — keahlian yang laris untuk usaha rumahan.', duration: '± 3 minggu', level: 'Pemula', image: img('kelas-hantaran.jpg'), featured: false },
+        { title: 'Membatik', category: 'Kriya', desc: 'Teknik canting dan cap, pewarnaan, serta pengembangan motif khas Kalimantan Timur.', duration: '± 3 minggu', level: 'Pemula', image: img('peserta-batik.jpg'), featured: false },
+        { title: 'Tata Boga', category: 'Kuliner', desc: 'Olahan kue dan masakan untuk usaha: resep, hitung modal, kemasan, dan kebersihan pangan.', duration: '± 1 bulan', level: 'Pemula', image: img('galeri-karya.jpg'), featured: false },
+        { title: 'Barbershop', category: 'Kecantikan', desc: 'Teknik potong rambut pria, fade, shaving, dan pelayanan pelanggan barbershop.', duration: '± 1 bulan', level: 'Pemula', image: img('kelas-praktik.jpg'), featured: false },
+        { title: 'Teknisi Handphone', category: 'Teknik', desc: 'Diagnosa kerusakan, ganti komponen, dan software handphone — siap buka jasa servis.', duration: '± 1 bulan', level: 'Pemula', image: img('pelatihan-dinas.jpg'), featured: false },
+        { title: 'Komputer & Administrasi', category: 'Perkantoran', desc: 'Aplikasi perkantoran, surat-menyurat, arsip, dan kesekretariatan.', duration: '± 1 bulan', level: 'Pemula', image: img('wisuda-peserta.jpg'), featured: false },
+      ],
+    },
+    why: {
+      enabled: true,
+      kicker: 'Kenapa LPK Rita',
+      title: 'Bukan sekadar kursus. Ini jalan menuju pekerjaan.',
+      items: [
+        { title: 'Terakreditasi & berizin resmi', desc: 'Terdaftar di Disnaker dan terakreditasi. Sertifikat Anda diakui.' },
+        { title: 'Siap uji kompetensi BNSP', desc: 'Peserta didampingi sampai Uji Sertifikasi Kompetensi Kerja.' },
+        { title: 'Praktik lebih banyak dari teori', desc: 'Belajar langsung dengan alat, bahan, dan model nyata di workshop kami.' },
+        { title: 'Jejaring salon & perusahaan', desc: 'Kerja sama dengan salon dan perusahaan di Bontang dan sekitarnya.' },
+        { title: 'Kelas online pendamping', desc: 'Materi, video, dan kuis bisa diulang kapan saja lewat portal belajar.' },
+        { title: 'Instruktur berpengalaman', desc: 'Dibimbing praktisi yang aktif di bidangnya, bukan hanya pengajar.' },
+      ],
+    },
+    steps: {
+      enabled: true,
+      kicker: 'Cara bergabung',
+      title: 'Empat langkah, tanpa ribet.',
+      items: [
+        { title: 'Isi formulir', desc: 'Daftar online atau datang langsung ke kantor kami di Berbas Tengah.' },
+        { title: 'Konsultasi program', desc: 'Tim kami menghubungi Anda via WhatsApp untuk memilih kelas & jadwal.' },
+        { title: 'Belajar & praktik', desc: 'Ikuti kelas tatap muka, lalu ulangi materi di portal belajar online.' },
+        { title: 'Uji & bersertifikat', desc: 'Ikuti uji kompetensi dan terima sertifikat untuk melamar kerja atau buka usaha.' },
+      ],
+    },
+    gallery: {
+      enabled: true,
+      kicker: 'Dokumentasi',
+      title: 'Kelas kami, apa adanya.',
+      items: [
+        { image: img('uji-bnsp-2024.jpg'), caption: 'Uji Sertifikasi Kompetensi Kerja 2024' },
+        { image: img('workshop-menjahit.jpg'), caption: 'Workshop menjahit' },
+        { image: img('kelas-kecantikan.jpg'), caption: 'Praktik tata kecantikan' },
+        { image: img('peserta-kecantikan.jpg'), caption: 'Peserta kelas kecantikan' },
+        { image: img('pelatihan-dinas.jpg'), caption: 'Pelatihan bersama dinas' },
+        { image: img('wisuda-peserta.jpg'), caption: 'Pelepasan peserta' },
+        { image: img('peserta-batik.jpg'), caption: 'Kelas membatik' },
+        { image: img('kelas-hantaran.jpg'), caption: 'Kelas hantaran & souvenir' },
+        { image: img('praktik-menjahit.jpg'), caption: 'Praktik menjahit' },
+        { image: img('ujikom-bersama.jpg'), caption: 'Uji kompetensi bersama asesor' },
+      ],
+    },
+    team: {
+      enabled: true,
+      kicker: 'Instruktur & pengelola',
+      title: 'Orang-orang di balik kelas.',
+      items: [
+        { name: 'Rita Hidayat, SE', role: 'Pimpinan · Instruktur TKK & TRP' },
+        { name: 'Hj. Siti Aisyah', role: 'Instruktur Kecantikan Kulit & Rambut' },
+        { name: 'Aa Sudarsono, S.Pd', role: 'Instruktur Kecantikan Kulit & Rias Pengantin' },
+        { name: 'Mahmud Hidayat, SE', role: 'Instruktur Kecantikan Kulit & Hantaran' },
+        { name: 'Teguh Tri Harsono', role: 'Kepala Bagian Keuangan & SDM' },
+        { name: 'Andri Setiawan', role: 'Sekretaris' },
+        { name: 'Gilang Rizky Febrian', role: 'Pemasaran & Humas' },
+        { name: 'Euis Paramita', role: 'Tata Usaha' },
+      ],
+    },
+    testimonials: {
+      enabled: true,
+      kicker: 'Kata alumni',
+      title: 'Mereka sudah memulai.',
+      items: [
+        { quote: 'Awalnya cuma bisa dandan sendiri. Setelah kelas MUA dan ikut uji kompetensi, sekarang saya sudah terima job rias wisuda dan lamaran.', name: 'Alumni Make Up Artist', meta: 'Bontang Selatan' },
+        { quote: 'Instrukturnya sabar dan praktiknya banyak. Pulang kursus langsung berani terima jahitan dari tetangga.', name: 'Alumni Menjahit', meta: 'Bontang Utara' },
+        { quote: 'Kelas hantaran ini membuka usaha kecil saya. Modalnya kecil, pesanan datang dari mulut ke mulut.', name: 'Alumni Souvenir & Hantaran', meta: 'Bontang Barat' },
+      ],
+    },
+    partners: {
+      enabled: true,
+      title: 'Didukung & diakui oleh',
+      items: [
+        { name: 'Kementerian Ketenagakerjaan', logo: img('mitra-kemnaker.png') },
+        { name: 'Pemerintah Provinsi Kalimantan Timur', logo: img('mitra-kaltim.png') },
+        { name: 'Pemerintah Kota Bontang', logo: img('mitra-bontang.png') },
+        { name: 'Dinas Pendidikan', logo: img('mitra-disdik.png') },
+      ],
+    },
+    faq: {
+      enabled: true,
+      kicker: 'Pertanyaan umum',
+      title: 'Yang sering ditanyakan.',
+      items: [
+        { q: 'Apakah perlu pengalaman sebelumnya?', a: 'Tidak. Sebagian besar program dimulai dari dasar. Instruktur akan menyesuaikan dengan kemampuan Anda.' },
+        { q: 'Apakah ada batasan usia atau ijazah?', a: 'Program kami terbuka untuk umum, termasuk yang belum sempat menyelesaikan pendidikan formal. Hubungi kami untuk syarat program tertentu.' },
+        { q: 'Apakah mendapat sertifikat?', a: 'Ya. Peserta mendapat sertifikat pelatihan dari LPK Rita, dan dapat mengikuti uji kompetensi untuk sertifikat BNSP sesuai jadwal.' },
+        { q: 'Bagaimana dengan kelas online?', a: 'Setiap peserta mendapat akun portal belajar untuk mengulang materi, menonton video, dan mengerjakan kuis latihan.' },
+        { q: 'Berapa biaya pelatihan?', a: 'Biaya berbeda tiap program dan kadang tersedia program bersubsidi pemerintah. Isi formulir atau chat WhatsApp untuk info terbaru.' },
+      ],
+    },
+    cta: {
+      enabled: true,
+      title: 'Siap berkembang bersama LPK Rita?',
+      subtitle: 'Isi formulir singkat ini. Tim kami menghubungi Anda dalam 1×24 jam kerja.',
+      image: img('ujikom-bersama.jpg'),
+      success: 'Terima kasih! Pendaftaran Anda sudah kami terima. Kami segera menghubungi via WhatsApp.',
+    },
+    contact: {
+      enabled: true,
+      kicker: 'Kunjungi kami',
+      title: 'Kantor & workshop',
+    },
+  },
+};
+
+// Kelas contoh untuk portal belajar.
+export const defaultCourses = [
+  {
+    slug: 'dasar-make-up-artist',
+    title: 'Dasar Make Up Artist',
+    category: 'Kecantikan',
+    summary: 'Kenali jenis kulit, alat rias, dan langkah base make up yang rapi dan tahan lama.',
+    cover: '/assets/img/peserta-kecantikan.jpg',
+    level: 'Pemula',
+    access: 'open',
+    published: 1,
+    passScore: 70,
+    curriculum: [
+      {
+        id: 's1', title: 'Mengenal kulit & alat',
+        lessons: [
+          { id: 'l1', type: 'text', title: 'Selamat datang di kelas MUA', minutes: 3, body: '## Selamat datang!\n\nDi kelas ini Anda akan belajar dasar-dasar rias wajah yang dipakai MUA profesional.\n\n**Yang perlu disiapkan:**\n- Pembersih wajah & toner\n- Primer, foundation, bedak\n- Kuas dan spons rias\n\nSelesaikan setiap materi, lalu kerjakan kuis di akhir bab untuk mengukur pemahaman Anda.' },
+          { id: 'l2', type: 'text', title: 'Empat jenis kulit wajah', minutes: 5, body: '## Kenali kulit sebelum merias\n\n1. **Normal** — seimbang, pori halus.\n2. **Kering** — terasa kencang, mudah bersisik. Gunakan pelembap lebih banyak.\n3. **Berminyak** — mengilap di area T. Pilih produk *oil-free* dan bedak tabur.\n4. **Kombinasi** — berminyak di area T, normal/kering di pipi.\n\n> Tips: tes dengan kertas minyak 1 jam setelah mencuci muka.' },
+          { id: 'l3', type: 'video', title: 'Mengenal kuas & spons', minutes: 8, video: '', body: 'Tempel tautan video YouTube milik LPK Rita di dashboard. Perhatikan fungsi setiap kuas: foundation, powder, blush, contour, dan eyeshadow.' },
+          { id: 'l4', type: 'quiz', title: 'Kuis: Jenis kulit', minutes: 4, questions: [
+            { q: 'Kulit yang mengilap di dahi, hidung, dan dagu tapi normal di pipi disebut…', options: ['Kulit kering', 'Kulit kombinasi', 'Kulit normal', 'Kulit sensitif'], answer: 1, explain: 'Area T berminyak + pipi normal = kombinasi.' },
+            { q: 'Produk yang dianjurkan untuk kulit berminyak adalah…', options: ['Krim tebal berbahan minyak', 'Produk oil-free dan bedak tabur', 'Tanpa pelembap sama sekali', 'Foundation dewy'], answer: 1, explain: 'Oil-free membantu mengontrol kilap tanpa menyumbat pori.' },
+            { q: 'Kapan waktu terbaik mengetes jenis kulit dengan kertas minyak?', options: ['Langsung setelah cuci muka', '1 jam setelah cuci muka', 'Setelah memakai foundation', 'Malam sebelum tidur'], answer: 1, explain: 'Beri waktu kulit kembali memproduksi minyak alaminya.' },
+          ] },
+        ],
+      },
+      {
+        id: 's2', title: 'Base make up',
+        lessons: [
+          { id: 'l5', type: 'text', title: 'Urutan base make up', minutes: 5, body: '## Urutan yang benar\n\n1. Bersihkan & lembapkan\n2. Primer\n3. Color corrector (jika perlu)\n4. Foundation\n5. Concealer\n6. Bedak / setting powder\n\nAplikasikan tipis berlapis. **Lebih mudah menambah daripada mengurangi.**' },
+          { id: 'l6', type: 'quiz', title: 'Kuis: Urutan base', minutes: 3, questions: [
+            { q: 'Setelah primer, langkah berikutnya adalah…', options: ['Bedak', 'Color corrector / foundation', 'Blush on', 'Eyeliner'], answer: 1, explain: 'Primer menyiapkan kulit, lalu koreksi warna dan foundation.' },
+            { q: 'Prinsip aplikasi foundation yang baik adalah…', options: ['Tebal sekali pakai', 'Tipis berlapis', 'Hanya di dahi', 'Dicampur bedak'], answer: 1, explain: 'Tipis berlapis membuat hasil natural dan mudah dikontrol.' },
+          ] },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'menjahit-untuk-pemula',
+    title: 'Menjahit untuk Pemula',
+    category: 'Busana',
+    summary: 'Mengenal mesin jahit, jenis kain, dan membuat pola dasar pertama Anda.',
+    cover: '/assets/img/workshop-menjahit.jpg',
+    level: 'Pemula',
+    access: 'approval',
+    published: 1,
+    passScore: 70,
+    curriculum: [
+      {
+        id: 's1', title: 'Mesin & kain',
+        lessons: [
+          { id: 'l1', type: 'text', title: 'Bagian-bagian mesin jahit', minutes: 6, body: '## Kenali mesin Anda\n\n- **Jarum & sepatu jahit** — tempat kain dijahit\n- **Sekoci & spul** — benang bawah\n- **Pengatur tegangan** — kerapatan jahitan\n- **Roda tangan** — menggerakkan jarum manual\n\nSelalu matikan mesin saat mengganti jarum.' },
+          { id: 'l2', type: 'quiz', title: 'Kuis: Mesin jahit', minutes: 3, questions: [
+            { q: 'Benang bawah pada mesin jahit digulung pada…', options: ['Roda tangan', 'Spul', 'Sepatu jahit', 'Pedal'], answer: 1, explain: 'Spul berada di dalam sekoci.' },
+            { q: 'Yang harus dilakukan sebelum mengganti jarum adalah…', options: ['Menaikkan tegangan', 'Mematikan mesin', 'Menarik kain', 'Mengisi spul'], answer: 1, explain: 'Keselamatan dulu!' },
+          ] },
+        ],
+      },
+    ],
+  },
+];

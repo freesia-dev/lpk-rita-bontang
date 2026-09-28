@@ -1,0 +1,21 @@
+{
+  "name": "lpk-rita-bontang",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Website, dashboard superadmin, dan LMS LPK Rita Bontang",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/node.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server/node.js",
+    "cf:dev": "wrangler dev",
+    "cf:setup": "wrangler d1 create lpkrita-db && wrangler r2 bucket create lpkrita-media",
+    "cf:secret": "wrangler secret put ADMIN_PASSWORD",
+    "cf:deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.142.0"
+  }
+}
